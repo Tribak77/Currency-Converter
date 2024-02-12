@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convertisseur de devises</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> convertisseur de devises</h1>
+        <form>
+            <label for="do">saisie le montant à convertir :</label>
+            <input type="number" id="do" name="do" min="0"><br>
+            <div>
+                <select name="monnaie1" id="monnaie1">
+                    <option value="MAD">MAD</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CAD">CAD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="EGP">EGP</option>
+                </select>
+                <span>à</span>
+                <select name="monnaie2" id="monnaie2">
+                    <option value="MAD">MAD</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CAD">CAD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="EGP">EGP</option>
+                </select>
+            </div>
+            <br>
+
+            <label for="cible"> le montant convertir :</label>
+            <input type="number" id="cible" name="cible" readonly><br><br>
+
+            <div>
+                    <button class="btn trans" type="button" onclick="myFunction()"> transférer</button>
+            <button class="btn clear" type="reset">clear</button>
+            </div>
+        
+
+        </form>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
+
+</body>
+
+</html>
